@@ -20,12 +20,11 @@
 <p>Much like the original author of the paper here also I have used transfer learning in the form of utilizing a pre-trained VGG19 model. Neural style transfer is an unsupervised task, and we are not interested in the output of the VGG19 model but inside the learning of internal layers. Here we will use three images the content image will be the prime theme of the generated image, the syle image which, will use to extract texture and style, and the fixed sample input image, which could either be a copy of the content image or white noise. All three images will get feed into the model to extract the feature maps and subsequently the content and style representations.</p>
 <h2>Loss Function</h2>
 <h3>Content Loss</h3>
-<p>The content image and the input base image are passed to our model and the intermediate layers' outputs (listed above as ‘conv1_1’, ‘conv2_1’, ‘conv3_1’, ‘conv4_1’ and ‘conv5_1’) are extracted using the above-defined class. Then we calculate the euclidean distance between the intermediate representation of the content image and the input base image.</p>
+<p>The content image and the input base image are passed to our model and the intermediate layers' outputs that is from layer ‘conv1_1’, ‘conv2_1’, ‘conv3_1’, ‘conv4_1’ and ‘conv5_1’ are extracted. Then we calculate the euclidean distance between the intermediate representation of the content image and the input base image.</p>
 <h3>Style Loss</h3>
-<p>Defining the style loss function requires more work. To extract the style information from the VGG network, we use all the layers of the CNN. Furthermore, style information is measured as the amount of correlation present between features maps in a given layer. Next, a loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image.</p>
+<p>As I already mentioned, that to extract the style information from the VGG network, we use all the layers of the CNN. The style information is measured as the amount of correlation present between features maps in a given layer. Here the loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image. We describe the style loss of the base input image, x, and the style image, a, as the distance between the style representation (the gram matrices) of these images.</p>
 <h3>Total Loss</h3>
-<p>The alpha and beta are weights for content and style, respectively. They can be tweaked to alter our final result.
-So our total loss function basically represents our problem- we need the content of the final image to be similar to the content of the content image and the style of the final image should be similar to the style of the style image.</p>
+<p>The alpha and beta are weights for content and style, respectively. They can be tweaked to alter our final result. So our total loss function basically represents our problem we need the content of the final image to be similar to the content of the content image and the style of the final image should be similar to the style of the style image.</p>
 
 
 
