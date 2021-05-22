@@ -25,7 +25,10 @@
 <p>As I already mentioned, that to extract the style information from the VGG network, we use all the layers of the CNN. The style information is measured as the amount of correlation present between features maps in a given layer. Here the loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image. We describe the style loss of the base input image, x, and the style image, a, as the distance between the style representation thats the gram matrices of these images.</p>
 <h3>Total Loss</h3>
 <p>The alpha and beta are the two hyperparameter which act as the weights for content and style. They can be tweaked to alter our final result. So our total loss function basically represents our problem we need the content of the final image to be similar to the content of the content image and the style of the final image should be similar to the style of the style image.</p>
-
+<h2>Breathtaking Results</h2>
+<p align="center">
+ <img src="https://github.com/NavinBondade/Bruno-An-AI-That-Paints-Mind-Blowing-Painting/blob/main/Generated%20Images/all%20paintings.png">
+</p> 
 
 
 
