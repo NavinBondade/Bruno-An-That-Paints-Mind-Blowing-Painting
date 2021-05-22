@@ -22,9 +22,9 @@
 <h3>Content Loss</h3>
 <p>The content image and the input base image are passed to our model and the intermediate layers' outputs that is from layer ‘conv1_1’, ‘conv2_1’, ‘conv3_1’, ‘conv4_1’ and ‘conv5_1’ are extracted. Then we calculate the euclidean distance between the intermediate representation of the content image and the input base image.</p>
 <h3>Style Loss</h3>
-<p>As I already mentioned, that to extract the style information from the VGG network, we use all the layers of the CNN. The style information is measured as the amount of correlation present between features maps in a given layer. Here the loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image. We describe the style loss of the base input image, x, and the style image, a, as the distance between the style representation (the gram matrices) of these images.</p>
+<p>As I already mentioned, that to extract the style information from the VGG network, we use all the layers of the CNN. The style information is measured as the amount of correlation present between features maps in a given layer. Here the loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image. We describe the style loss of the base input image, x, and the style image, a, as the distance between the style representation thats the gram matrices of these images.</p>
 <h3>Total Loss</h3>
-<p>The alpha and beta are weights for content and style, respectively. They can be tweaked to alter our final result. So our total loss function basically represents our problem we need the content of the final image to be similar to the content of the content image and the style of the final image should be similar to the style of the style image.</p>
+<p>The alpha and beta are the two hyperparameter which act as the weights for content and style. They can be tweaked to alter our final result. So our total loss function basically represents our problem we need the content of the final image to be similar to the content of the content image and the style of the final image should be similar to the style of the style image.</p>
 
 
 
