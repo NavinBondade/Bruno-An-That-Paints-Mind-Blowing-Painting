@@ -5,7 +5,7 @@
 </a>
 </p>
 <img src="https://github.com/NavinBondade/Bruno-An-AI-That-Paints-The-Painting/blob/main/Generated%20Images/display.png" width="950" height="450">
-<p>Who doesn't want to be an artist and influence the world with creativity but the truth is not everybody holds that kind of skill. And that's why I have built a deep learning system that automatically paints mind-blowing paintings on your wish with the help of a technique called neural style transfer.</p>
+<p>The desire to create art and leave a lasting impact on the world through creativity is a universal aspiration. However, the reality is that not everyone possesses the innate artistic skills required to achieve this. To bridge this gap, I have developed a deep learning system that empowers individuals to create stunning, high-quality paintings effortlessly. This system leverages a sophisticated technique known as neural style transfer, enabling users to generate visually captivating artworks based on their preferences. By combining the essence of a chosen content image with the stylistic elements of another, this technology transforms the creative process, allowing anyone to produce unique and inspiring pieces of art.</p>
 <h2>Libraries Used</h2>
 <ul>
   <li>Pytorch</li>
@@ -22,7 +22,7 @@
 <p align="center">
  <img src="https://pyimagesearch.com/wp-content/uploads/2018/08/neural_style_transfer_gatys.jpg">
 </p>          
-<p>Much like the original author of the paper here also I have used transfer learning in the form of utilizing a pre-trained VGG19 model. Neural style transfer is an unsupervised task, and we are not interested in the output of the VGG19 model but inside the learning of internal layers. Here we will use three images the content image will be the prime theme of the generated image, the syle image which, will use to extract texture and style, and the fixed sample input image, which could either be a copy of the content image or white noise. All three images will get feed into the model to extract the feature maps and subsequently the content and style representations.</p>
+<p>In line with the approach taken by the original author, I have employed transfer learning by utilizing a pre-trained VGG19 model. In the context of neural style transfer, which is an unsupervised learning task, the focus is not on the final output of the VGG19 model but rather on the insights gained from its internal layers. The process involves three key images: the content image, which dictates the primary theme of the generated image; the style image, used to extract textures and artistic elements; and a fixed sample input image, which can either be a duplicate of the content image or a random initialization such as white noise. These images are processed through the VGG19 model to obtain feature maps, from which the content and style representations are derived. This technique allows for the blending of the content and style elements to create a new, stylized image that retains the essence of the original content while incorporating the desired stylistic features.</p>
 <h2>Loss Function</h2>
 <h3>Content Loss</h3>
 <p>The content image and the input base image are passed to our model and the intermediate layers' outputs that is from layer ‘conv1_1’, ‘conv2_1’, ‘conv3_1’, ‘conv4_1’ and ‘conv5_1’ are extracted. Then we calculate the euclidean distance between the intermediate representation of the content image and the input base image.</p>
