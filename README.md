@@ -5,7 +5,9 @@
 </a>
 </p>
 <img src="https://github.com/NavinBondade/Bruno-An-AI-That-Paints-The-Painting/blob/main/Generated%20Images/display.png" width="950" height="450">
-<p>The desire to create art and leave a lasting impact on the world through creativity is a universal aspiration. However, the reality is that not everyone possesses the innate artistic skills required to achieve this. To bridge this gap, I have developed a deep learning system that empowers individuals to create stunning, high-quality paintings effortlessly. This system leverages a sophisticated technique known as neural style transfer, enabling users to generate visually captivating artworks based on their preferences. By combining the essence of a chosen content image with the stylistic elements of another, this technology transforms the creative process, allowing anyone to produce unique and inspiring pieces of art.</p>
+<p>The aspiration to create meaningful art and leave a lasting creative legacy is a shared human experience. Yet, for many, the lack of formal artistic training or innate skills can present a significant barrier to realizing their artistic vision. In response to this challenge, I have developed an advanced deep learning system designed to democratize the art creation process, enabling individuals of all skill levels to produce visually striking, high-quality paintings with ease.
+
+This system is built on the innovative concept of neural style transfer, a technique that blends the content of one image with the stylistic elements of another, producing a unique and visually captivating artwork. By analyzing the intricate patterns of both the content and style images, the system seamlessly merges them, preserving the essence of the content while applying the artistic qualities of the chosen style. This technology transforms the creative process, empowering users to generate personalized, professional-grade artworks effortlessly, and allowing anyone—regardless of artistic background—to create distinctive and inspiring pieces that reflect their vision.</p>
 <h2>Libraries Used</h2>
 <ul>
   <li>Pytorch</li>
